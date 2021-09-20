@@ -1,0 +1,4 @@
+Data file was too large to upload on softconf directly. Link to data here: https://www.dropbox.com/s/6ghrlrf632wq7zs/data.zip?dl=0
+
+
+Please note that the unzipped data folder is 1.2G
