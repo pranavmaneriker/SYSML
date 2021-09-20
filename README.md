@@ -26,7 +26,7 @@ For multitask model, see `scripts/multitask_model.sh`
 
 Note: Please place data folder in this dir as shown by structure or adjust script data paths accordingly.
 
-* `data`: See `data/README.md` (from `data\_link`)
+* `data`: See `data/README.md` (from `data_link.txt`)
 * `graph_embedding_code`: Generates hetereogeneous graph embeddings. See `graph_embedding_code/README.md`
 * `README.md`: This file
 * `requirements.txt`: pip install package list
@@ -45,11 +45,11 @@ Experiments were run on SLURM cluster machines with config:
     * RAM: 131734940 kB 
     * HDD: 7.3 T
 
-However, the model runs on a desktop with ~16GB RAM, 512GB HDD as well.
+However, the model has been tested and trains/runs successfully on a desktop with 16GB RAM, 512GB HDD.
 
 ### Runtime
 
-Note that the first run takes a long time as the episode dataset is built. Subsequent runs use a cached version of the dataset the cost is amortized.
+Note that the first run takes a long time as the episode dataset is built. Subsequent runs use a cached version of the dataset; the cost is amortized.
 
 Average running time: 27:17 per run on multitask model.
 
@@ -61,5 +61,5 @@ Hyperparams are reported in supplementary material.
 
 ### Notes
 
-Data preprocessing scripts are provided at the data link.
+Data preprocessing scripts are provided with the data (see `data_link.txt`).
 
