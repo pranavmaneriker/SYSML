@@ -7,7 +7,6 @@ from typing import List
 import numpy as np
 import torch
 from torch import nn
-from transformers import BertTokenizerFast, RobertaTokenizerFast
 from tokenizers import Tokenizer
 from tqdm import tqdm
 import pandas as pd
