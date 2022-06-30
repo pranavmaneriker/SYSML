@@ -7,8 +7,8 @@ DIRECTORY=.
 
 all: dataConstruction generateWalks distance metapath2vec
 
-dataConstruction: $(DIRECTORY)/dataConstruction_reddit.cpp $(DIRECTORY)/header.h $(DIRECTORY)/ioFile.h $(DIRECTORY)/parser.hpp $(DIRECTORY)/strPackage.h
-	$(CC) $(CFLAGS) $(DIRECTORY)/dataConstruction_reddit.cpp -o dataConstruction
+dataConstruction: $(DIRECTORY)/dataConstruction.cpp $(DIRECTORY)/header.h $(DIRECTORY)/ioFile.h $(DIRECTORY)/parser.hpp $(DIRECTORY)/strPackage.h
+	$(CC) $(CFLAGS) $(DIRECTORY)/dataConstruction.cpp -o dataConstruction
 
 generateWalks: $(DIRECTORY)/generateWalks.cpp $(DIRECTORY)/header.h $(DIRECTORY)/ioFile.h $(DIRECTORY)/parser.hpp $(DIRECTORY)/strPackage.h
 	$(CC) $(CFLAGS) $(DIRECTORY)/generateWalks.cpp -o generateWalks

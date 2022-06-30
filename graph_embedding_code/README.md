@@ -58,4 +58,16 @@ The code uses or adapted from following repos:
 - metapath2vec: modified from https://ericdongyx.github.io/metapath2vec/m2v.html
 
 
+### Example usage
+
+We assume that the splits (`data/rasmus/cleaned/splits/`) are in `$DATA_DIR`
+```
+make dataConstruction
+time ./dataConstruction -rawdata $DATA_DIR/sr2/train.csv -outputdir sr2 -padding 500000
+make generateWalks
+time ./generateWalks -datadir sr2/ -numwalks 200 -walklength 80
+make metapath2vec
+time ./metapath2vec -train sr2/walks_sr_200_80.txt -output sr2/embedding0526.txt -pp 1 -size 128 -window 7 -negative 5 -threads 32
+```
+
 
