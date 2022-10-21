@@ -63,3 +63,25 @@ Hyperparams are reported in supplementary material.
 
 Data preprocessing scripts are provided with the data (see `data_link.txt`).
 
+
+## Citation
+
+If you ues our work, please use the following citation:
+
+```
+@inproceedings{maneriker-etal-2021-sysml,
+    title = "{SYSML}: {S}t{Y}lometry with {S}tructure and {M}ultitask {L}earning: {I}mplications for {D}arknet Forum Migrant Analysis",
+    author = "Maneriker, Pranav  and
+      He, Yuntian  and
+      Parthasarathy, Srinivasan",
+    booktitle = "Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing",
+    month = nov,
+    year = "2021",
+    address = "Online and Punta Cana, Dominican Republic",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.emnlp-main.548",
+    doi = "10.18653/v1/2021.emnlp-main.548",
+    pages = "6844--6857",
+    abstract = "Darknet market forums are frequently used to exchange illegal goods and services between parties who use encryption to conceal their identities. The Tor network is used to host these markets, which guarantees additional anonymization from IP and location tracking, making it challenging to link across malicious users using multiple accounts (sybils). Additionally, users migrate to new forums when one is closed further increasing the difficulty of linking users across multiple forums. We develop a novel stylometry-based multitask learning approach for natural language and model interactions using graph embeddings to construct low-dimensional representations of short episodes of user activity for authorship attribution. We provide a comprehensive evaluation of our methods across four different darknet forums demonstrating its efficacy over the state-of-the-art, with a lift of up to 2.5X on Mean Retrieval Rank and 2X on Recall@10.",
+}
+```
